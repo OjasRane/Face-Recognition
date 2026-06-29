@@ -9,6 +9,9 @@ wheels/
 data/
 .idea/
 
+# Model-related files
+*.pkl
+
 # Virtual environments
 .venv/
 venv/
