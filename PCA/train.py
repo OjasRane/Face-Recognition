@@ -2,14 +2,7 @@ import numpy as np
 from sklearn.datasets import fetch_olivetti_faces
 from sklearn.decomposition import PCA
 import joblib
-
-N_SUBJECTS = 40
-TRAIN_PER_SUBJECT = 8
-IMAGES_PER_SUBJECT = 10
-IMG_SIZE = 4096
-IMG_SHAPE = (64, 64)
-TOTAL_IMAGES = 400
-N_COMPONENTS = 50
+from utils import N_SUBJECTS, TRAIN_PER_SUBJECT, IMAGES_PER_SUBJECT, IMG_SIZE, TOTAL_IMAGES, N_COMPONENTS
 
 def load_train_dataset():
     """

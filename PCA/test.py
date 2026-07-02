@@ -2,14 +2,7 @@ import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import fetch_olivetti_faces
-
-N_SUBJECTS = 40
-TRAIN_PER_SUBJECT = 8
-TEST_PER_SUBJECT = 2
-IMAGES_PER_SUBJECT = 10
-IMG_SIZE = 4096
-IMG_SHAPE = (64, 64)
-TOTAL_IMAGES = 400
+from utils import N_SUBJECTS, TRAIN_PER_SUBJECT, TEST_PER_SUBJECT, IMAGES_PER_SUBJECT, IMG_SIZE, IMG_SHAPE, TOTAL_IMAGES
 
 def load_test_dataset():
     """
