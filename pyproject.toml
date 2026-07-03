@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "face-recognition"
 version = "0.3.0"
@@ -9,4 +13,11 @@ dependencies = [
     "matplotlib>=3.11.0",
     "numpy>=2.5.0",
     "scikit-learn>=1.9.0",
+    "streamlit>=1.58.0",
 ]
+
+[tool.setuptools]
+py-modules = ["utils"]
+
+[tool.uv]
+link-mode = "copy"
