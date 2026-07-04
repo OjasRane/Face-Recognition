@@ -30,7 +30,7 @@ def find_match(test_image_vector, model, projection):
     return min_distance_idx, distance[min_distance_idx]
 
 st.title("Face Recognition using Eigenfaces", text_alignment="center")
-st.markdown("<h3 align='center'>Check the confusion matrix below to find cases where the model fails.</h3>", unsafe_allow_html=True)
+st.markdown("<h4 align='center'>Check the confusion matrix below to see where the model fails.</h4>", unsafe_allow_html=True)
 
 st.selectbox("Select subject", options=[f"Subject {i}" for i in range(N_SUBJECTS)], key="subject")
 st.pills("Select Image", options=[f"Image {i}" for i in range(TEST_PER_SUBJECT)], default="Image 0", required=True, key="image")
@@ -51,7 +51,7 @@ with col2:
     min_distance_idx, distance = find_match(test_faces[st.session_state["test_face_idx"]], pca, projection)
     fig, ax = plt.subplots()
     ax.imshow(train_faces[min_distance_idx].reshape(IMG_SHAPE), cmap="gray", interpolation="bilinear")
-    ax.set_title(f"Image of subject {min_distance_idx // TRAIN_PER_SUBJECT}")
+    ax.set_title(f"Nearest match: Subject {min_distance_idx // TRAIN_PER_SUBJECT}")
     ax.set_axis_off()
     st.pyplot(fig)
     plt.close(fig)
