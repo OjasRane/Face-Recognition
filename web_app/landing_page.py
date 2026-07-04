@@ -1,11 +1,11 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Face Recognition",
+    page_title="Face Recognition Lab",
     page_icon=":material/familiar_face_and_zone:"
 )
 
-st.title("Face Recognition", text_alignment="center")
+st.title("Face Recognition Lab", text_alignment="center")
 st.markdown("<h2 align='center'>Explore face recognition projects here!</h2>", unsafe_allow_html=True)
 
 with st.container(border=True, key="PCA", horizontal_alignment="center"):

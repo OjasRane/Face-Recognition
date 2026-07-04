@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.set_page_config(
-    page_title="Face Recognition | Eigenfaces",
+    page_title="Face Recognition Lab | Eigenfaces",
     page_icon=":material/familiar_face_and_zone:"
 )
 
