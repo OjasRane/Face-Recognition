@@ -1,4 +1,4 @@
-# Face Recognition
+# Face Recognition Lab
 
 ## Overview
 
@@ -112,7 +112,7 @@ The app also relies on project data and model artifacts stored in `web_app/asset
 ## Troubleshooting
 
 - **Page routing does not work**: Run Streamlit from the project root, not from inside `web_app/`.
-- **Missing asset files**: Verify that `web_app/assets/datasets/olivetti_faces_dataset.npz` and `web_app/assets/models/pca/pca.pkl` exist.
+- **Missing asset files**: Verify that `web_app/assets/datasets/olivetti_faces_dataset.npz`, `web_app/assets/models/pca/pca.pkl` and `web_app/assets/models/confusion_matrix.png` exist.
 - **Image display issues**: Ensure the saved model and dataset files were not moved or renamed.
 
 ## Related Resources
