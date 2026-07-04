@@ -51,7 +51,7 @@ python3 PCA/test.py # For Linux/MacOS
 ```
 
 Notes:
-- `train.py` will load the dataset, compute PCA, train the classifier (if applicable), and save model artifacts (check the script for the exact output path).
+- `train.py` will load the dataset, compute PCA, train the classifier (if applicable), and save model artifacts (check the script for the exact output path). This uses Scikit Learn's PCA class, if needed a from scratch implementation is available in the `application/` directory of [Singular-Value-Decomposition](https://github.com/OjasRane/Singular-Value-Decomposition) repository. This from scratch implementation uses SVD.
 - `test.py` will load saved model artifacts and produce evaluation metrics and example visualizations.
 
 ## Outputs

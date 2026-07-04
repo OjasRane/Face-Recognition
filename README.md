@@ -7,11 +7,12 @@ Landing Page of [Face Recognition Lab](https://face-recognition-lab.streamlit.ap
 ![Landing Page](readme_assets/landing_page_screenshot.png)
 
 ### PCA model
-Confusion matrix
-![Confusion Matrix](./web_app/assets/models/pca/confusion_matrix.png)
 
 Screenshots from [Face Recognition Lab](https://face-recognition-lab.streamlit.app)
 ![PCA Playground](readme_assets/pca_screenshot.png)
+
+Confusion matrix
+![Confusion Matrix](./web_app/assets/models/pca/confusion_matrix.png)
 
 ## Project Overview
 
@@ -172,6 +173,7 @@ streamlit run web_app/landing_page.py   # For Linux/MacOS
 ## Notes
 
 - PCA is effective here because the dataset is aligned and controlled, but it still captures variance rather than identity directly.
+- This project uses `sklearn.decomposition.PCA`, for a from scratch implementation refer the `principal_component_analysis` module from the repository [Singular-Value-Decomposition](https://github.com/OjasRane/Singular-Value-Decomposition).
 - The notebook is the best place to see how the eigenfaces approach behaves across matching and failure cases.
 - Future Fisherfaces/LDA work can fit naturally beside the current PCA flow without changing the overall project shape.
 - The app relies on the precomputed assets in `web_app/assets/` so it can run without retraining first.
