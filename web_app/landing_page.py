@@ -10,7 +10,7 @@ st.markdown("<h2 align='center'>Explore face recognition projects here!</h2>", u
 
 with st.container(border=True, key="PCA", horizontal_alignment="center"):
     st.markdown("<h2 align='center'>Face Recognition using PCA (Eigenfaces)</h2>", unsafe_allow_html=True)
-    st.write("Explore the eigenfaces algorithm for face recognition trained on Olivetti Faces dataset.")
+    st.text("Explore the eigenfaces algorithm for face recognition trained on Olivetti Faces dataset.", text_alignment="center")
     if st.button("Explore Now!", key="explore"):
         st.switch_page("pages/pca.py")
 
