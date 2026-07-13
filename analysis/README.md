@@ -25,7 +25,7 @@ The notebook uses the same Python dependencies as the rest of the project, inclu
 - scikit-learn
 - JupyterLab or VS Code notebooks
 
-Install them with either `uv sync` or `pip install -r requirements.txt` from the project root.
+Install them with either `uv sync` or `pip install -e .` from the project root.
 
 ## How to run
 

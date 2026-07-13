@@ -13,7 +13,7 @@ This folder contains a small PCA-based face recognition.
 - Install project dependencies from the repository root:
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 If you prefer a minimal set, ensure these packages are available: `numpy`, `scikit-learn`, `matplotlib`, `joblib`.

@@ -62,7 +62,7 @@ uv sync
 2. Install dependencies:
 
 	```bash
-	pip install -r requirements.txt
+	pip install -e .
 	```
 
 ## Running the Application
