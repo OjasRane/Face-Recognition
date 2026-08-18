@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.datasets import fetch_olivetti_faces
 from sklearn.decomposition import PCA
 import joblib
-from utils import N_SUBJECTS, TRAIN_PER_SUBJECT, IMAGES_PER_SUBJECT, IMG_SIZE, TOTAL_IMAGES, N_COMPONENTS
+from utils import N_SUBJECTS, TRAIN_PER_SUBJECT, IMAGES_PER_SUBJECT, IMG_SIZE, TOTAL_IMAGES
 
 def load_train_dataset():
     """
@@ -17,7 +17,7 @@ def load_train_dataset():
     train_dataset = faces.reshape(-1, IMG_SIZE)
     return train_dataset
 
-def train(train_dataset, n_components):
+def train(train_dataset, n_components=50):
     """
     Trains PCA model
     :param train_dataset: ndarray of shape (TRAIN_PER_SUBJECT*N_SUBJECTS, IMG_SIZE)
@@ -30,6 +30,7 @@ def train(train_dataset, n_components):
 
 if __name__ == "__main__":
     train_dataset = load_train_dataset()
+    N_COMPONENTS = 50
     pca, projected = train(train_dataset, N_COMPONENTS)
 
     payload = {
