@@ -16,6 +16,13 @@ Screenshots from [Face Recognition Lab](https://face-recognition-lab.streamlit.a
 Confusion matrix
 ![Confusion Matrix](./web_app/assets/models/pca/confusion_matrix.png)
 
+### LDA model
+
+Screenshots from [Face Recognition Lab](https://face-recognition-lab.streamlit.app)
+![LDA Playground](readme_assets/lda_screenshot.png)
+
+Confusion matrix
+![Confusion Matrix](./web_app/assets/models/lda/confusion_matrix.png)
 ## Project Overview
 
 - `analysis/face_recognition_using_PCA.ipynb`: A notebook walkthrough covering PCA, eigenfaces, training, matching, and evaluation on the Olivetti Faces dataset.
