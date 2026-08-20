@@ -20,16 +20,16 @@ def load_train_dataset():
     y = np.repeat(np.arange(N_SUBJECTS), TRAIN_PER_SUBJECT)
     return train_dataset, y
 
-def train(train_dataset, labels, lda__n_components=20, pca__n_components=150):
+def train(train_dataset, labels, lda__n_components=30, pca__n_components=80):
     """
-    Trains pipeline of PCA and LDA. The default arguments for n_components gives a 98.75% accuracy.
+    Trains pipeline of PCA and LDA. The default arguments for n_components.
     :param train_dataset: ndarray of shape (TRAIN_PER_SUBJECT*N_SUBJECTS, IMG_SIZE)
     :param labels: ndarray of shape (TRAIN_PER_SUBJECT*N_SUBJECTS)
     :param lda__n_components: n_components for LinearDiscriminantAnalysis
     :param pca__n_components: n_components for PCA
     :return: Trained model
     """
-    pca = PCA(n_components=pca__n_components)
+    pca = PCA(n_components=pca__n_components, random_state=42)
     lda = LinearDiscriminantAnalysis(n_components=lda__n_components)
     model = Pipeline([('pca', pca), ('lda', lda)])
     model.fit(train_dataset, labels)
